@@ -1,4 +1,3 @@
-from langchain_google_genai import GoogleGenerativeAI
 from langchain.embeddings import HuggingFaceEmbeddings, OllamaEmbeddings
 from langchain.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -6,7 +5,6 @@ from langchain.vectorstores import Chroma
 from langchain.schema.runnable import RunnableLambda, RunnablePassthrough
 from langchain.prompts import ChatPromptTemplate
 from langchain.chat_models import ChatOllama
-from langchain.storage import LocalFileStore
 
 ###1. LLM Model
 llm = ChatOllama(
